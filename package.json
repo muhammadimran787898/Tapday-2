@@ -6,7 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "analyze": "cross-env ANALYZE=true yarn build",
+    "storybook": "cross-env FORCE_COLOR=1 storybook dev -p 6006",
+    "test-storybook": "cross-env FORCE_COLOR=1 test-storybook",
+    "build-storybook": "cross-env FORCE_COLOR=1 storybook build",
+    "test": "cross-env FORCE_COLOR=1 jest --passWithNoTests",
+    "e2e:headless": "playwright test",
+    "e2e:ui": "playwright test --ui",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "postinstall": "npx patch-package -y",
+    "preinstall": "npx only-allow yarn",
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg"
   },
   "dependencies": {
     "@types/node": "20.5.9",
@@ -20,6 +34,19 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+   
+    "class-variance-authority": "^0.7.0",
+    "formik": "^2.4.4",
+    "husky": "^8.0.3",
+    "lodash": "^4.17.21",
+   
+    "next-auth": "^4.23.1",
+    "next-compose-plugins": "^2.2.1",
+   
+    "react-redux": "^8.1.2",
+    "tailwind-merge": "^1.10.0",
+    "yup": "^1.2.0",
+    "zod": "^3.21.4"
   }
 }
