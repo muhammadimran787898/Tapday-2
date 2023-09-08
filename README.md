@@ -13,7 +13,7 @@ Shopify Integration:
 The platform will be integrated with Shopify, allowing users to seamlessly connect their online stores and access product data, customer information, and other essential Shopify resources.
 Drag-and-Drop Interface:
 
-Users will have access to an intuitive drag-and-drop interface that enables them to design their app's user interface (UI) by simply dragging and dropping elements onto the canvas.
+Users will have access to an intuitive drag-and-drop interface that enables them to design their app's user interface (UI) by simply dragging and dropping elements onto the webshop.
 Multi-Platform Support:
 
 The platform will support app development for both Android and iOS, ensuring that users can reach a wide range of mobile device users.
@@ -68,18 +68,12 @@ Overall, this project aims to empower Shopify merchants with a user-friendly and
 - Visualization Tools: Graphical representation relies on visualization tools and techniques to translate raw data into visually meaningful formats
 - Dashboard Widgets: Interactive dashboards often combine multiple types of visualizations to provide an overview of real-time data from different sources.
 
-
 ## 🎯 Getting Started
 To get started with this project, follow these steps:
 
 -   clone repository:
 
 - Install the dependencies:
-
-## Appendix
-
-Any additional information goes here
-
 
 ## 💾 State Management
 # Zustand
@@ -88,3 +82,4 @@ Zustand is a small, fast, and scalable state management library. It's designed t
 # Rduxtollkit
 Redux is a predictable state container for managing the state of JavaScript applications, primarily used in frontend development, particularly with libraries like React. It provides a centralized and predictable way to manage and update application state. Redux is known for its simplicity, scalability, and the ability to manage complex application states effectively.
 ## 🎨 Styling and Design System
+Tailwind css is a primery frontend library in this project for designing.
