@@ -82,4 +82,5 @@ Zustand is a small, fast, and scalable state management library. It's designed t
 # Rduxtollkit
 Redux is a predictable state container for managing the state of JavaScript applications, primarily used in frontend development, particularly with libraries like React. It provides a centralized and predictable way to manage and update application state. Redux is known for its simplicity, scalability, and the ability to manage complex application states effectively.
 ## 🎨 Styling and Design System
-Tailwind css is a primery frontend library in this project for designing.
+Tailwind css is a primery frontend library in this project for designing including Twinmacro for styled component.
+
