@@ -1,13 +1,7 @@
 /** @type {import('next').NextConfig} */
-const { i18n } = require('./i18n')
 const nextConfig = {
   env: {
     NEXT_APP_SERVER: process.env.NEXT_APP_SERVER
-  },
-  i18n: {
-    locales: ['en-US', 'fr-FR', 'es-ES'],
-
-    defaultLocale: 'en-US'
   },
 
   async redirects() {
