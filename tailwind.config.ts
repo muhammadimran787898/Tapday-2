@@ -48,11 +48,11 @@ module.exports = {
         engage: '#4E28CD'
       },
       fontFamily: {
-        medium: 'sofia-medium',
-        sofiaSemi: 'sofia-semi',
-        regular: 'sofia-regular',
-        sofiaBold: 'sofia-bold',
-        sofiaLight: 'sofia-light',
+        medium: 'inter-medium',
+        semibold: 'inter-semibold',
+        regular: 'inter-regular',
+        bold: 'inter-bold',
+        light: 'inter-light',
         sans: ['Inter', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
         mono: ['Menlo', 'monospace'],

@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:JSON.parse("{\"Easily deploy Smart Contracts for any Token right from your\\nbrowser.\":\"Easily deploy Smart Contracts for any Token right from your\\nbrowser.\",\"how to become rich.\":\"muhammad imran munir 78787998989898\"}")};

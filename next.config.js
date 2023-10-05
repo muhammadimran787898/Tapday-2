@@ -1,39 +1,26 @@
 /** @type {import('next').NextConfig} */
+const { locales } = require('./lingui.config')
 const nextConfig = {
+  i18n: {
+    localeDetection: true,
+    locales,
+    defaultLocale: 'en'
+  },
+  webpack: (config) => {
+    config.module.rules = [
+      ...config.module.rules,
+      {
+        resourceQuery: /raw-lingui/,
+        type: 'javascript/auto'
+      }
+    ]
+
+    return config
+  },
   env: {
     NEXT_APP_SERVER: process.env.NEXT_APP_SERVER
   },
 
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/loading',
-        permanent: true
-      },
-      {
-        source: '/setting',
-        destination: '/loading?page=setting',
-        permanent: true
-      },
-      {
-        source: '/engage',
-        destination: '/loading?page=engage',
-        permanent: true
-      },
-      // integrations
-      {
-        source: '/integrations',
-        destination: '/loading?page=integrations',
-        permanent: true
-      },
-      {
-        source: '/analytics',
-        destination: '/loading?page=analytics',
-        permanent: true
-      }
-    ]
-  },
   reactStrictMode: false,
   swcMinify: true,
   images: {

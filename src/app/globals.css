@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'inter-medium';
+  src: url('../assets/font/Inter-Medium.ttf');
+  /* src: url('https://use.typekit.net/af/54ce76/00000000000000007735a154/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter-bold';
+  src: url('../assets/font/Inter-Bold.ttf');
+  /* src: url('https://use.typekit.net/af/54ce76/00000000000000007735a154/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter-light';
+  src: url('../assets/font/Inter-Light.ttf');
+  /* src: url('https://use.typekit.net/af/54ce76/00000000000000007735a154/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3'); */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'inter-regular';
+  src: url('../assets/font/Inter-Regular.ttf');
+  /* src: url('https://use.typekit.net/af/54ce76/00000000000000007735a154/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter-semibold';
+  src: url('../assets/font/Inter-SemiBold.ttf');
+  /* src: url('https://use.typekit.net/af/54ce76/00000000000000007735a154/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'CustomFont', sans-serif;
+  /* Add other styling as needed */
+}
