@@ -13,12 +13,6 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/home.tsx:13
-msgid ""
-"Easily deploy Smart Contracts for any Token right from your\n"
-"browser."
-msgstr ""
-
-#: src/app/page.tsx:15
+#: src/app/page.tsx:12
 msgid "how to become rich."
-msgstr "muhammad imran munir 78787998989898"
+msgstr "Hello world"

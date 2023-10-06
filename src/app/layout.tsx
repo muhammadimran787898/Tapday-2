@@ -34,7 +34,7 @@ export default function RootLayout({
             className=""
             onClick={() => setLocale(locale == 'en' ? 'cs' : 'en')}
           >
-            change kro isko
+            Change Language
           </button>
           <I18nProvider i18n={i18n}>{children}</I18nProvider>
           <ThemeSwitcher />
