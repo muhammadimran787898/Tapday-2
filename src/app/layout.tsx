@@ -11,6 +11,9 @@ import { useEffect, useState } from 'react'
 import Providers from './provider'
 import ThemeSwitcher from './ThemeSwitcher'
 
+import { ModeToggle } from 'components/ui/mode-toggle'
+import MainNav from 'components/ui/menubar'
+
 export default function RootLayout({
   children
 }: {
@@ -29,15 +32,16 @@ export default function RootLayout({
     <html>
       <body>
         <Providers>
+          <MainNav />
+          
+
           <button
             style={{ fontFamily: 'CustomFont' }}
             className=""
             onClick={() => setLocale(locale == 'en' ? 'cs' : 'en')}
-          >
-            Change Language
-          </button>
+          ></button>
           <I18nProvider i18n={i18n}>{children}</I18nProvider>
-          <ThemeSwitcher />
+          {/* <ThemeSwitcher /> */}
         </Providers>
       </body>
     </html>

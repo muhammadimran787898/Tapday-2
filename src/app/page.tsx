@@ -5,13 +5,7 @@ import { t } from '@lingui/macro'
 
 const HomeComponent = () => {
   const { i18n } = useLingui()
-  return (
-    <>
-      <p>Hello</p>
-
-      {i18n._(t`how to become rich.`)}
-    </>
-  )
+  return <>{i18n._(t`how to become rich.`)}</>
 }
 
 export default HomeComponent

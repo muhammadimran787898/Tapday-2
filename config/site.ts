@@ -1,18 +1,13 @@
-export type SiteConfig = typeof siteConfig
+import { SiteConfig } from "types"
 
-export const siteConfig = {
-  name: "Next.js",
+export const siteConfig: SiteConfig = {
+  name: "Taxonomy",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
-  mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
-  ],
+    "An open source application built using the new router, server components and everything new in Next.js 13.",
+  url: "https://tx.shadcn.com",
+  ogImage: "https://tx.shadcn.com/og.jpg",
   links: {
     twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    github: "https://github.com/shadcn/taxonomy",
   },
 }
