@@ -2,8 +2,9 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { Menu, Search } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { ModeToggle } from './mode-toggle'
+import DropLanguage from 'src/components/languagedropdown/page'
 
 export default function MainNav() {
   const [state, setState] = React.useState(false)
@@ -42,19 +43,22 @@ export default function MainNav() {
                 <Link href={item.path}>{item.title}</Link>
               </li>
             ))}
-            <form className="flex items-center  space-x-2 border rounded-md p-2">
+            {/* <form className="flex items-center  space-x-2 border rounded-md p-2">
               <Search className="h-5 w-5 flex-none text-gray-300" />
               <input
                 className="w-full outline-none appearance-none placeholder-wihite-500 text-gray-600 sm:w-auto"
                 type="text"
                 placeholder="Search"
               />
-            </form>
-            <span className="flex justify-end ml-14">
-              <ModeToggle />
-            </span>
+            </form> */}
           </ul>
         </div>
+        <span>
+          <DropLanguage />
+        </span>
+        <span className="flex justify-end ">
+          <ModeToggle />
+        </span>
       </div>
     </nav>
   )

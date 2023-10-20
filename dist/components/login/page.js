@@ -4,7 +4,7 @@ import { GoogleButton } from "../sociallogin/google";
 import { FacebookButton } from "../sociallogin/facebook";
 export default function Login() {
     return /*#__PURE__*/ React.createElement("div", {
-        className: "bg-gray-100 min-h-screen flex items-center justify-center"
+        className: " min-h-screen flex items-center justify-center"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "min-h-screen bg-gray-100 flex flex-col justify-center sm:py-6"
     }, /*#__PURE__*/ React.createElement("div", {
@@ -12,7 +12,7 @@ export default function Login() {
     }, /*#__PURE__*/ React.createElement("h1", {
         className: "font-bold text-center text-2xl mb-5"
     }, "Your Logo"), /*#__PURE__*/ React.createElement("div", {
-        className: "bg-white shadow w-full rounded-lg divide-y divide-gray-200"
+        className: " shadow w-full rounded-lg divide-y divide-gray-200"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "px-5 py-7"
     }, /*#__PURE__*/ React.createElement("label", {

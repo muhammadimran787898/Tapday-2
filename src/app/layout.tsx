@@ -9,9 +9,7 @@ import { messages as csMessages } from '../../locale/cs/messages'
 import { useEffect, useState } from 'react'
 
 import Providers from './provider'
-import ThemeSwitcher from './ThemeSwitcher'
 
-import { ModeToggle } from 'components/ui/mode-toggle'
 import MainNav from 'components/ui/menubar'
 
 export default function RootLayout({
@@ -33,7 +31,6 @@ export default function RootLayout({
       <body>
         <Providers>
           <MainNav />
-          
 
           <button
             style={{ fontFamily: 'CustomFont' }}
