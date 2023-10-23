@@ -22,6 +22,6 @@ import { useLingui } from "@lingui/react";
 import { t } from "@lingui/macro";
 var HomeComponent = function() {
     var i18n = useLingui().i18n;
-    return /*#__PURE__*/ React.createElement(React.Fragment, null, i18n._(t(_templateObject())));
+    return /*#__PURE__*/ React.createElement("p", null, i18n._(t(_templateObject())));
 };
 export default HomeComponent;

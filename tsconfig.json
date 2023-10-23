@@ -4,37 +4,17 @@
     "incremental": true, // https://nextjs.org/docs/basic-features/typescript#incremental-type-checking
     "baseUrl": ".",
     "paths": {
-      "@/components/*": [
-        ".@/components/*"
-      ],
-      "@/pages/*": [
-        "./src/pages/*"
-      ],
-      "@/lib/*": [
-        "./src/lib/*"
-      ],
-      "@/hooks/*": [
-        "./src/hooks/*"
-      ],
-      "@/styles/*": [
-        "./src/styles/*"
-      ],
-      "@/locale/*": [
-        "./locales/*"
-      ],
-      "@/mocks/*": [
-        "./__mocks__/*"
-      ],
-      "@/tests/*": [
-        "./.jest/*"
-      ]
+      "@/components/*": [".@/components/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/locale/*": ["./locales/*"],
+      "@/mocks/*": ["./__mocks__/*"],
+      "@/tests/*": ["./.jest/*"]
     },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "declaration": true,
     "sourceMap": true,
     "noImplicitAny": true,
@@ -71,7 +51,5 @@
     ".next/types/**/*.ts",
     "lingui.config.js"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
