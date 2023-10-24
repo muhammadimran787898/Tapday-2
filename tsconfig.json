@@ -5,8 +5,11 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": [
-        ".@/components/*"
+        "./components/*"
       ],
+      // "@/lang/*": [
+      //   "./dictinoaries/*"
+      // ],
       "@/pages/*": [
         "./src/pages/*"
       ],
@@ -19,15 +22,16 @@
       "@/styles/*": [
         "./src/styles/*"
       ],
-      "@/locale/*": [
-        "./locales/*"
-      ],
+      // "@/locale/*": [
+      //   "./locales/*"
+      // ],
       "@/mocks/*": [
         "./__mocks__/*"
       ],
       "@/tests/*": [
         "./.jest/*"
-      ]
+      ],
+      "@/*":["./*"]
     },
     "target": "es5",
     "lib": [
@@ -68,9 +72,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "lingui.config.js"
-  ],
+    ".next/types/**/*.ts"
+, "sm"  ],
   "exclude": [
     "node_modules"
   ]

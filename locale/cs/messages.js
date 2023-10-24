@@ -1,1 +1,0 @@
-/*eslint-disable*/module.exports={messages:JSON.parse("{\"how to become rich.\":\"muhammad imran munir 78787998989898\"}")};

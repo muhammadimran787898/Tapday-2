@@ -1,10 +1,4 @@
 'use client'
-import { Input } from 'components/ui/input'
-import Link from 'next/link'
-import { Button } from 'react-day-picker'
-import { GithubButton } from '../sociallogin/apple'
-import { GoogleButton } from '../sociallogin/google'
-import { FacebookButton } from '../sociallogin/facebook'
 
 export default function Login() {
   return (
@@ -145,9 +139,6 @@ export default function Login() {
                 >
                   Github
                 </button>
-                <GithubButton />
-                <GoogleButton />
-                <FacebookButton />
               </div>
             </div>
             <div className="py-5">

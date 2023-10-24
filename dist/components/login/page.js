@@ -1,7 +1,4 @@
 "use client";
-import { GithubButton } from "../sociallogin/apple";
-import { GoogleButton } from "../sociallogin/google";
-import { FacebookButton } from "../sociallogin/facebook";
 export default function Login() {
     return /*#__PURE__*/ React.createElement("div", {
         className: "bg-gray-100 min-h-screen flex items-center justify-center"
@@ -54,7 +51,7 @@ export default function Login() {
     }, "Google"), /*#__PURE__*/ React.createElement("button", {
         type: "button",
         className: "transition duration-200 border border-gray-200 text-gray-500 w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-normal text-center inline-block"
-    }, "Github"), /*#__PURE__*/ React.createElement(GithubButton, null), /*#__PURE__*/ React.createElement(GoogleButton, null), /*#__PURE__*/ React.createElement(FacebookButton, null))), /*#__PURE__*/ React.createElement("div", {
+    }, "Github"))), /*#__PURE__*/ React.createElement("div", {
         className: "py-5"
     }, /*#__PURE__*/ React.createElement("div", {
         className: "grid grid-cols-2 gap-1"

@@ -1,28 +1,22 @@
 /** @type {import('next').NextConfig} */
-const { locales } = require('./lingui.config')
 const nextConfig = {
-  i18n: {
-    localeDetection: true,
-    locales,
-    defaultLocale: 'en'
-  },
-  webpack: (config) => {
-    config.module.rules = [
-      ...config.module.rules,
+  async redirects() {
+    return [
       {
-        resourceQuery: /raw-lingui/,
-        type: 'javascript/auto'
+        source: '/',
+        destination: '/en', // Change 'en' to your default language code
+        permanent: true
       }
     ]
-
-    return config
   },
+  // i18n: {
+  //   locales: ['en', 'de'],
+  //   defaultLocale: 'en'
+  // },
   env: {
     NEXT_APP_SERVER: process.env.NEXT_APP_SERVER
   },
-
   reactStrictMode: false,
-  swcMinify: true,
   images: {
     domains: ['cdn.shopify.com'],
     remotePatterns: [
