@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/en', // Change 'en' to your default language code
+        destination: '/', // Change 'en' to your default language code
         permanent: true
       }
     ]
